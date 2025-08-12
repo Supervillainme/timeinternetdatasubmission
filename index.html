@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details Form</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce7f3; /* Light pink background */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="w-full max-w-3xl bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-200">
+        <!-- Logo in the top-right corner -->
+        <div class="flex justify-end mb-4">
+            <img src="https://i.imgur.com/rvtkiXm.png" alt="Company Logo" class="h-12 w-auto rounded-lg shadow-md">
+        </div>
+        
+        <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center">Account Information</h2>
+        <p class="text-gray-600 mb-8 text-center">Please provide the requested details below.</p>
+
+        <!-- The form itself -->
+        <form id="contactForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="nric" class="block text-sm font-medium text-gray-700">NRIC:</label>
+                    <input type="text" id="nric" name="nric"
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 ease-in-out">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number:</label>
+                    <input type="text" id="phone" name="phone"
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 ease-in-out">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Account Details</h3>
+                <p class="text-sm text-gray-600 mb-4">If you are managing more than 10 accounts, please submit another form.</p>
+                
+                <div class="space-y-4">
+                    <!-- Account Details Table-like Structure -->
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber1" class="sr-only">Account Number 1</label>
+                        <input type="text" id="accountNumber1" name="accountNumber1" placeholder="Account Number 1"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email1" class="sr-only">Email Address 1</label>
+                        <input type="email" id="email1" name="email1" placeholder="Email Address 1"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship1" class="sr-only">Relationship 1</label>
+                        <input type="text" id="relationship1" name="relationship1" placeholder="Relationship 1"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber2" class="sr-only">Account Number 2</label>
+                        <input type="text" id="accountNumber2" name="accountNumber2" placeholder="Account Number 2"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email2" class="sr-only">Email Address 2</label>
+                        <input type="email" id="email2" name="email2" placeholder="Email Address 2"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship2" class="sr-only">Relationship 2</label>
+                        <input type="text" id="relationship2" name="relationship2" placeholder="Relationship 2"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber3" class="sr-only">Account Number 3</label>
+                        <input type="text" id="accountNumber3" name="accountNumber3" placeholder="Account Number 3"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email3" class="sr-only">Email Address 3</label>
+                        <input type="email" id="email3" name="email3" placeholder="Email Address 3"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship3" class="sr-only">Relationship 3</label>
+                        <input type="text" id="relationship3" name="relationship3" placeholder="Relationship 3"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber4" class="sr-only">Account Number 4</label>
+                        <input type="text" id="accountNumber4" name="accountNumber4" placeholder="Account Number 4"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email4" class="sr-only">Email Address 4</label>
+                        <input type="email" id="email4" name="email4" placeholder="Email Address 4"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship4" class="sr-only">Relationship 4</label>
+                        <input type="text" id="relationship4" name="relationship4" placeholder="Relationship 4"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 5 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber5" class="sr-only">Account Number 5</label>
+                        <input type="text" id="accountNumber5" name="accountNumber5" placeholder="Account Number 5"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email5" class="sr-only">Email Address 5</label>
+                        <input type="email" id="email5" name="email5" placeholder="Email Address 5"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship5" class="sr-only">Relationship 5</label>
+                        <input type="text" id="relationship5" name="relationship5" placeholder="Relationship 5"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 6 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber6" class="sr-only">Account Number 6</label>
+                        <input type="text" id="accountNumber6" name="accountNumber6" placeholder="Account Number 6"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email6" class="sr-only">Email Address 6</label>
+                        <input type="email" id="email6" name="email6" placeholder="Email Address 6"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship6" class="sr-only">Relationship 6</label>
+                        <input type="text" id="relationship6" name="relationship6" placeholder="Relationship 6"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 7 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber7" class="sr-only">Account Number 7</label>
+                        <input type="text" id="accountNumber7" name="accountNumber7" placeholder="Account Number 7"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email7" class="sr-only">Email Address 7</label>
+                        <input type="email" id="email7" name="email7" placeholder="Email Address 7"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship7" class="sr-only">Relationship 7</label>
+                        <input type="text" id="relationship7" name="relationship7" placeholder="Relationship 7"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 8 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber8" class="sr-only">Account Number 8</label>
+                        <input type="text" id="accountNumber8" name="accountNumber8" placeholder="Account Number 8"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email8" class="sr-only">Email Address 8</label>
+                        <input type="email" id="email8" name="email8" placeholder="Email Address 8"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship8" class="sr-only">Relationship 8</label>
+                        <input type="text" id="relationship8" name="relationship8" placeholder="Relationship 8"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 9 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber9" class="sr-only">Account Number 9</label>
+                        <input type="text" id="accountNumber9" name="accountNumber9" placeholder="Account Number 9"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email9" class="sr-only">Email Address 9</label>
+                        <input type="email" id="email9" name="email9" placeholder="Email Address 9"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship9" class="sr-only">Relationship 9</label>
+                        <input type="text" id="relationship9" name="relationship9" placeholder="Relationship 9"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                    <!-- Row 10 -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <label for="accountNumber10" class="sr-only">Account Number 10</label>
+                        <input type="text" id="accountNumber10" name="accountNumber10" placeholder="Account Number 10"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="email10" class="sr-only">Email Address 10</label>
+                        <input type="email" id="email10" name="email10" placeholder="Email Address 10"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                        <label for="relationship10" class="sr-only">Relationship 10</label>
+                        <input type="text" id="relationship10" name="relationship10" placeholder="Relationship 10"
+                               class="px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asterisk note -->
+            <p class="text-xs text-gray-500 mt-4">Note: This email address will be used to log in to the self-care account; bill will continue to be sent to the existing email account.</p>
+
+            <button type="submit"
+                    class="w-full flex justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 transition-all duration-200 ease-in-out">
+                Submit
+            </button>
+        </form>
+
+        <!-- Message box for success/error messages -->
+        <div id="messageBox" class="mt-8 p-4 rounded-lg text-center hidden"></div>
+    </div>
+
+    <script>
+        // Get references to the form and message box
+        const contactForm = document.getElementById('contactForm');
+        const messageBox = document.getElementById('messageBox');
+
+        // Listen for the form submission
+        contactForm.addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Show a loading state
+            messageBox.textContent = 'Sending...';
+            messageBox.className = 'mt-8 p-4 rounded-lg text-center bg-gray-100 text-gray-700 block';
+
+            // Get the form data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData.entries());
+
+            // --- IMPORTANT: REPLACE THE URL BELOW WITH YOUR ZAPIER WEBHOOK URL ---
+            const zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/5284660/u4wu3vr/'; 
+
+            try {
+                const response = await fetch(zapierWebhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (response.ok) {
+                    // Success! Show a success message and clear the form
+                    messageBox.textContent = 'Thank you! Your message has been sent.';
+                    messageBox.className = 'mt-8 p-4 rounded-lg text-center bg-green-100 text-green-700 block';
+                    contactForm.reset();
+                } else {
+                    // There was an error with the Zapier webhook
+                    messageBox.textContent = 'Oops! Something went wrong. Please try again.';
+                    messageBox.className = 'mt-8 p-4 rounded-lg text-center bg-red-100 text-red-700 block';
+                }
+            } catch (error) {
+                // Catch network or other fetch-related errors
+                console.error('Submission error:', error);
+                messageBox.textContent = 'A network error occurred. Please check your connection and try again.';
+                messageBox.className = 'mt-8 p-4 rounded-lg text-center bg-red-100 text-red-700 block';
+                
+            }
+        });
+    </script>
+</body>
+</html>
